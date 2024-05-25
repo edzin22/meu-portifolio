@@ -1,0 +1,346 @@
+/* ESTILIZAÇÃO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 550;
+  background-color: #00ff08;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  transition: 2s;
+}
+
+p {
+  color: #ffff;
+}
+button:hover,
+form .btn-enviar input:hover {
+  border: 2px;
+  transform: scale(1.05);
+}
+
+section {
+  box-shadow: 0 0 40px 10px #059c001f;
+  margin-top: 100px;
+}
+
+/* Estilo do Cabeçalho */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: rgb(149, 149, 149);
+  text-decoration: none;
+  display: inline-block;
+  transition: 1.5s;
+}
+
+header a:hover {
+  color: white;
+  transform: scale(1.05);
+}
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site.flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #ffff;
+  font-size: 30px;
+}
+
+.texto-site h2 {
+  font-size: 25px;
+  color: #00ff08;
+}
+
+.topo-do-site .texto-site h1 span {
+  color: #00ff08;
+  font-size: 70px;
+}
+
+.topo-do-site .texto-site p {
+  color: #ffff;
+  margin: 40px 0px;
+  text-wrap: wrap;
+}
+
+.nome {
+  font-size: 20px;
+  color: #00ff08;
+}
+
+div .img-topo-site img {
+  display: flex;
+  inline-size: 500px;
+}
+
+/* FORMAÇAO */
+
+#formacao .interface .formacao-box {
+  display: flex;
+  text-align: center;
+  align-items: first baseline;
+  display: inline-block;
+}
+
+.interface h2 {
+  color: #ffff;
+}
+
+.html {
+  color: orangered;
+  font-size: 18px;
+}
+
+.css {
+  color: rgb(79, 79, 228);
+  font-size: 18px;
+}
+
+.java {
+  color: yellow;
+  font-size: 18px;
+}
+
+img {
+  display: inline-block;
+  padding: 40px 50px;
+  transition: 2;
+  transform: 1s;
+  padding: 0 40px;
+}
+
+.profissao {
+  color: #00ff08;
+}
+
+/* Estilo para centralizar a imagem na página */
+.formacao-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo da imagem */
+.zoom {
+  width: 300px;
+  transition: transform 0.5s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* SOBRE */
+
+.sobre-mim .txt-sobre {
+  margin: 10px 0;
+  justify-content: center;
+}
+.interface .flex .img-sobre {
+  display: flex;
+  text-align: center;
+  align-items: first baseline;
+  display: inline-block;
+}
+
+.foto {
+  align-items: last baseline;
+  inline-size: 500px;
+  padding: 0 80px 100px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite alternate-reverse;
+}
+
+.link-social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
+  cursor: pointer;
+  padding: 5% 2%;
+}
+
+/* ESTILO DO PORTIFÓLIO */
+.titulo {
+  text-align: center;
+}
+
+.titulo span {
+  color: #00ff08;
+}
+
+section.portifolio {
+  padding: 80px 4%;
+}
+
+section.portifolio .flex {
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: #00ff08;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #ffff;
+  background-color: #06060680;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #acacac2c;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #ffff;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form textarea::placeholder {
+  color: #95b196;
+}
+
+form input::placeholder {
+  color: #95b196;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 140px;
+  background-color: #00ff08;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 1.5s;
+}
+/* EFEITOS */
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+  padding: 40px 4%;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer p a {
+  font-size: 14px;
+  color: #ffff;
+}

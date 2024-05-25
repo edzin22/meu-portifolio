@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- COMEÇO DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM DO GOOGLE FONTS -->
+
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <header>
+      <!--logo Portifólio-->
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="images/Logotipo  tecnologia.png" alt="Logo Portifólio" />
+          </a>
+        </div>
+
+        <!-- Menu Principal -->
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#formulario">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-contato">
+          <a href="#">
+            <button>Contato</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--NAV BAR-->
+
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="texto-site">
+              <h1>Desenvolvedor FrontEnd<span>.</span></h1>
+
+              <p>
+                Este perfil detalhado de um profissional em desenvolvimento
+                frontend destaca as habilidades, experiências e contribuições,
+                ilustrando sua capacidade e paixão pela área.
+              </p>
+
+              <div class="btn-contato">
+                <a href="#">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
+            </div>
+            <!--TEXTO SITE-->
+
+            <div class="img-topo-site">
+              <img src="images/foto-perfil.jpg" alt="foto-perfil" />
+            </div>
+          </div>
+          <!--FLEX-->
+        </div>
+        <!--INTERFACE-->
+      </section>
+      <!--TOPO SITE-->
+
+      <section class="formacao">
+        <div class="interface">
+          <h2 id="formacao">
+            MINHA FORMAÇÃO <span class="profissao">PROFISSIONAL</span>.
+          </h2>
+          <p class="habilidade">
+            Minhas habilidades na aréa da programação são,
+            <span class="html">HTML5</span>, <span class="css">CSS3</span> e
+            <span class="java">JavaScript</span>.
+          </p>
+
+          <div class="formacao-box">
+            <img src="images/html-5.png" alt="html" class="zoom" />
+            <img src="images/css-3.png" alt="css" class="zoom" />
+            <img src="images/script-java.png" alt="javascript" class="zoom" />
+          </div>
+          <!--FORMAÇÃO BOX-->
+        </div>
+        <!--INTERFACE-->
+      </section>
+      <!--FORMAÇÃO-->
+
+      <section class="sobre-mim">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="images/foto-sobre.png" alt="foto" class="foto" />
+            </div>
+            <!--IMG SOBRE-->
+            <div class="txt-sobre">
+              <h2 id="sobre-mim">SOBRE MIM.</h2>
+              <p>
+                Sou <span class="nome">Edmilson Ferreira</span> tenho 33 anos,
+                estudandante de Análise e Desenvolvimento de Sistemas na
+                universidade UNINTER, e estou pronto para criar a presença
+                online dos seus <span class="nome">sonhos</span>.
+              </p>
+              <div class="link-social">
+                <a href="https://web.whatsapp.com/" target="_blank"
+                  ><img src="images/whatsapp.png" alt=""
+                /></a>
+
+                <a href="https://github.com/" target="_blank"
+                  ><img src="images/social.png" alt=""
+                /></a>
+
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                  ><img src="images/linkedin.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <!--TXT SOBRE -->
+          </div>
+          <!--FLEX-->
+        </div>
+        <!--INTERFACE-->
+      </section>
+      <!--SOBRE-->
+
+      <section class="portifolio">
+        <div class="interface">
+          <h2 id="portifolio" class="titulo"> PORTIFÓLIO EM <span>CONSTRUÇÃO.</span></h2>
+          <div class="flex">
+           
+            <div class="img-port" style="background-image: url(images/imagem.jpg);">
+            <div class="overlay">Projeto</div>
+            </div>
+            
+            <div class="img-port" style="background-image: url(images/imagem.jpg);">
+              <div class="overlay">Projeto</div>
+            </div>
+            
+            <div class="img-port" style="background-image: url(images/imagem.jpg);">
+              <div class="overlay">Projeto</div>
+            </div>
+          </div> <!--FLEX-->
+        </div> <!--INTERFACE-->
+      </section> <!--PORTIFOLIO-->
+
+      <section class="formulario">
+        <div class="interface">
+          <h2 id="formulario" class="titulo">FALE <span>COMIGO.</span></h2>
+
+          <form action="">
+            <input type="text" placeholder="Seu nome completo" required>
+            <input type="email" placeholder="email@email.com" required>
+            <input type="number" placeholder="( ) 99999-9999" required>
+            <textarea name="comentario" id="" placeholder="Deixe uma mensagem!"></textarea>
+            <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+          </form>
+        </div> <!--INTERFACE-->
+      </section> <!--FORMULÁRIO-->
+    </main>
+
+    <footer>
+      <div class="interface">
+          <div class="line-footer">
+
+              <div class="flex">
+                <div class="logo-footer">
+                  <img src="images/Logotipo  tecnologia.png" alt="">
+                </div>
+                   </p>
+                <div class="link-social">
+                  <a href="https://web.whatsapp.com/" target="_blank"
+                    ><img src="images/whatsapp.png" alt=""
+                  /></a>
+                  <a href="https://github.com/" target="_blank"
+                    ><img src="images/social.png" alt=""
+                  /></a>
+                  <a href="https://www.linkedin.com/feed/" target="_blank"
+                    ><img src="images/linkedin.png" alt=""
+                  /></a>
+                </div> <!--link-social-->
+              </div>
+            </div> <!--LINE-FOOTER-->
+          
+          <div class="line-footer">
+              <p><img src="images/o-email (1).png" alt="logo"><a href="mailto:edzin.22@gmail.com" target="_blank">edzin.22@gmail.com</a></p>
+          </div> <!--LINE-FOOTER-->
+      </div> <!--INTERFACE-->
+    </footer> <!--RODAPE-->
+  </body>
+</html>
